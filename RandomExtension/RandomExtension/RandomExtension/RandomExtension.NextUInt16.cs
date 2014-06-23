@@ -15,6 +15,10 @@
         public ushort NextUInt16(ushort minValue, ushort maxValue)
         {
             // TODO
+            if (minValue > maxValue)
+            {
+                throw new ArgumentOutOfRangeException("minValue", "“minValue”不能大于 maxValue。");
+            }
             return 0;
         }
     }

@@ -37,6 +37,10 @@ namespace System
         /// <exception cref="System.ArgumentOutOfRangeException"><c>maxValue</c> 小于 0。</exception>
         public int NextInt32(int maxValue)
         {
+            if (maxValue < 0)
+            {
+                throw new ArgumentOutOfRangeException("maxValue", "maxValue 必须大于或等于零。");
+            }
             return Next(maxValue);
         }
 
@@ -49,6 +53,10 @@ namespace System
         /// <exception cref="System.ArgumentOutOfRangeException"><c>minValue</c> 大于 <c>maxValue</c>。</exception>
         public int NextInt32(int minValue, int maxValue)
         {
+            if (minValue > maxValue)
+            {
+                throw new ArgumentOutOfRangeException("minValue", "“minValue”不能大于 maxValue。");
+            }
             return Next(minValue, maxValue);
         }
     }
