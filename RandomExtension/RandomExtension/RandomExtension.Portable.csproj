@@ -64,11 +64,16 @@
     <Compile Include="RandomHelper\RandomHelper.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextBoolean.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextByte.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextBytes.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextChinese.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextDateTime.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextEnum.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt16.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt32.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt64.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextUInt16.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextUInt32.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextUInt64.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
