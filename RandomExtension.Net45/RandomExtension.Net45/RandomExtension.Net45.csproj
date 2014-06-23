@@ -48,11 +48,13 @@
     <Compile Include="RandomExtension\RandomExtension.NextBytes.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextChinese.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextDateTime.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextDecimal.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextDouble.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextEnum.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextFloat.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextInt.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextLong.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextSByte.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextShort.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextString.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextUInt.cs" />

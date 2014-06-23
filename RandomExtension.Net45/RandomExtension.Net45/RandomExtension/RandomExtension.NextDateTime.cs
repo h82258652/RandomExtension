@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RandomExtension.Net45.RandomExtension
+﻿
+namespace System
 {
-    class RandomExtension
+    public partial class RandomExtension
     {
+        public DateTime NextDateTime()
+        {
+            // TODO add comment
+            return NextDateTime(DateTime.MinValue, DateTime.MaxValue);
+        }
+
+        public DateTime NextDateTime(DateTime minValue, DateTime maxValue)
+        {
+            // TODO add comment
+            return new DateTime(NextLong(minValue.Ticks, maxValue.Ticks));
+        }
     }
 }

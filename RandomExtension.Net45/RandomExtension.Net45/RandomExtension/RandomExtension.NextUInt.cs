@@ -1,12 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace RandomExtension.Net45.RandomExtension
+﻿
+namespace System
 {
-    class RandomExtension
+    public partial class RandomExtension
     {
+        public uint NextUInt()
+        {
+        }
+
+        public uint NextUInt(uint maxValue)
+        {
+        }
+
+        public uint NextUInt(uint minValue, uint maxValue)
+        {
+        }
     }
 }
