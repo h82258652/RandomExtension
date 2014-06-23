@@ -7,7 +7,9 @@ namespace System
         {
         }
 
-        
+        public sbyte NextSByte(bool containNavigate)
+        {
+        }
 
         public sbyte NextSByte(sbyte maxValue)
         {
