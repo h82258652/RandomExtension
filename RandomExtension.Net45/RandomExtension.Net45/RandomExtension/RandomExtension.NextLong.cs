@@ -14,6 +14,11 @@ namespace System
 
         public long NextLong(long maxValue)
         {
+            if (maxValue < 0)
+            {
+                throw new ArgumentOutOfRangeException("maxValue", "");
+            }
+            return (long)Sample() * maxValue;
         }
 
         public long NextLong(long minValue, long maxValue)

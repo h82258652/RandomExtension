@@ -60,6 +60,7 @@
     <Compile Include="RandomExtension\RandomExtension.NextUInt.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextULong.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextUShort.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt.cs" />
     <Compile Include="RandomHelper\RandomHelper.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextBoolean.cs" />
   </ItemGroup>

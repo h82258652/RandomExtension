@@ -9,7 +9,7 @@ namespace System
         /// <returns>真或假。</returns>
         public bool NextBoolean()
         {
-            return this.Next(2) == 0;
+            return Next(2) == 0;
         }
     }
 }
