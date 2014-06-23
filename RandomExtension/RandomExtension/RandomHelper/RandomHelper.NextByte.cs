@@ -1,7 +1,7 @@
 ﻿
 namespace System
 {
-    public partial class RandomHelper
+    public static partial class RandomHelper
     {
         /// <summary>
         /// 返回随机字节。

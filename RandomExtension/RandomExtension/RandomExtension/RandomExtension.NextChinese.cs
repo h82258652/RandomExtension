@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Globalization;
+using System.Text;
 
 namespace System
 {
@@ -17,10 +18,10 @@ namespace System
             var r3 = Next(10, 16);
             var r4 = r3 == 10 ? Next(1, 16) : r3 == 15 ? Next(0, 15) : Next(0, 16);
 
-            var sr1 = r1.ToString("X");
-            var sr2 = r2.ToString("X");
-            var sr3 = r3.ToString("X");
-            var sr4 = r4.ToString("X");
+            var sr1 = r1.ToString("X", CultureInfo.InvariantCulture);
+            var sr2 = r2.ToString("X", CultureInfo.InvariantCulture);
+            var sr3 = r3.ToString("X", CultureInfo.InvariantCulture);
+            var sr4 = r4.ToString("X", CultureInfo.InvariantCulture);
 
             var b1 = Convert.ToByte(sr1 + sr2, 16);
             var b2 = Convert.ToByte(sr3 + sr4, 16);

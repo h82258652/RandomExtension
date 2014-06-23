@@ -3,25 +3,25 @@ namespace System
 {
     public partial class RandomExtension
     {
-        public override double NextDouble()
-        {
-            // TODO
-            return base.NextDouble();
-        }
-
-        public double NextDouble(bool containNavigate)
+        public float NextSingle()
         {
             // TODO
             return 0;
         }
 
-        public double NextDouble(double maxValue)
+        public float NextSingle(bool containNagivate)
         {
             // TODO
             return 0;
         }
 
-        public double NextDouble(double minValue, double maxValue)
+        public float NextSingle(float maxValue)
+        {
+            // TODO
+            return 0;
+        }
+
+        public float NextSingle(float minValue, float maxValue)
         {
             // TODO
             return 0;

@@ -4,33 +4,34 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{E6B81B80-2534-4D4B-812D-A91ED2CF9071}</ProjectGuid>
+    <ProjectGuid>{8E55FAD0-989E-4FDE-8CAE-F211F4EEA712}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>System</RootNamespace>
     <AssemblyName>RandomExtension</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\net40\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;Net40</DefineConstants>
+    <OutputPath>bin\Debug\net40-client\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Net40Client</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\net40\RandomExtension.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\net40-client\RandomExtension.XML</DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\net40\</OutputPath>
-    <DefineConstants>TRACE;Net40</DefineConstants>
+    <OutputPath>bin\Release\net40-client\</OutputPath>
+    <DefineConstants>TRACE;Net40Client</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\net40\RandomExtension.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\net40-client\RandomExtension.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -52,25 +53,24 @@
     <Compile Include="RandomExtension\RandomExtension.NextDecimal.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextDouble.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextEnum.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextSingle.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt16.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextInt32.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextInt64.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextSByte.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextInt16.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextSingle.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextString.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextUInt16.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextUInt32.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextUInt64.cs" />
-    <Compile Include="RandomHelper\RandomHelper.NextByte.cs" />
     <Compile Include="RandomHelper\RandomHelper.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextBoolean.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextByte.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt16.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt32.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextInt64.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextUInt16.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextUInt32.cs" />
   </ItemGroup>
-  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

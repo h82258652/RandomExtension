@@ -12,7 +12,7 @@ namespace System
         public DateTime NextDateTime(DateTime minValue, DateTime maxValue)
         {
             // TODO add comment
-            return new DateTime(NextLong(minValue.Ticks, maxValue.Ticks));
+            return new DateTime(NextInt64(minValue.Ticks, maxValue.Ticks));
         }
     }
 }

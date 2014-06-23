@@ -21,6 +21,7 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Debug\net45\RandomExtension.XML</DocumentationFile>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -30,6 +31,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <DocumentationFile>bin\Release\net45\RandomExtension.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -51,20 +55,23 @@
     <Compile Include="RandomExtension\RandomExtension.NextDecimal.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextDouble.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextEnum.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextFloat.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextInt.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextLong.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt16.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt32.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt64.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextSByte.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextShort.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextSingle.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextString.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextUInt.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextULong.cs" />
-    <Compile Include="RandomExtension\RandomExtension.NextUShort.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt32.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt64.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt16.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt16.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextByte.cs" />
-    <Compile Include="RandomHelper\RandomHelper.NextInt.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt32.cs" />
     <Compile Include="RandomHelper\RandomHelper.cs" />
     <Compile Include="RandomHelper\RandomHelper.NextBoolean.cs" />
-    <Compile Include="RandomHelper\RandomHelper.NextLong.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt64.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextUInt16.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextUInt32.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
