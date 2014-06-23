@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <MinimumVisualStudioVersion>10.0</MinimumVisualStudioVersion>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>System</RootNamespace>
+    <AssemblyName>RandomExtension</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Profile328</TargetFrameworkProfile>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\portable\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Portable</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\portable\RandomExtension.XML</DocumentationFile>
+    <NoWarn>Portable</NoWarn>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\portable\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>Portable</NoWarn>
+    <DocumentationFile>bin\Release\portable\RandomExtension.XML</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <!-- A reference to the entire .NET Framework is automatically included -->
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomExtension\RandomExtension.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextBoolean.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextByte.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextBytes.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextChinese.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextDateTime.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextDecimal.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextDouble.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextEnum.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt16.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt32.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextInt64.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextSByte.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextSingle.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextString.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt16.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt32.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextUInt64.cs" />
+    <Compile Include="RandomHelper\RandomHelper.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextBoolean.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextByte.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt16.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt32.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextInt64.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextUInt16.cs" />
+    <Compile Include="RandomHelper\RandomHelper.NextUInt32.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -35,7 +35,7 @@ namespace System
         {
             if (minValue > maxValue)
             {
-                throw new ArgumentOutOfRangeException("minValue", minValue, "“minValue”不能大于 maxValue。");
+                throw new ArgumentOutOfRangeException("minValue", "“minValue”不能大于 maxValue。");
             }
             return (byte)Next(minValue, maxValue);
         }

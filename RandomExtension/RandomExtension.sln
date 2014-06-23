@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomExtension.Net40", "Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomExtension.Net40Client", "RandomExtension\RandomExtension.Net40Client.csproj", "{8E55FAD0-989E-4FDE-8CAE-F211F4EEA712}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RandomExtension.Portable", "RandomExtension\RandomExtension.Portable.csproj", "{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{8E55FAD0-989E-4FDE-8CAE-F211F4EEA712}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E55FAD0-989E-4FDE-8CAE-F211F4EEA712}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E55FAD0-989E-4FDE-8CAE-F211F4EEA712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F81EB5AD-B232-4088-BE7D-C88DDCC31F8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

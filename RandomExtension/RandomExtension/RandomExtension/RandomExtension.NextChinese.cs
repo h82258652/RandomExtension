@@ -39,7 +39,7 @@ namespace System
         {
             if (count < 0)
             {
-                throw new ArgumentOutOfRangeException("count", count, "count 不能小于零。");
+                throw new ArgumentOutOfRangeException("count", "count 不能小于零。");
             }
             if (count == 0)
             {
