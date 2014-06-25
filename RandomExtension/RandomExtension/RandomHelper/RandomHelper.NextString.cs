@@ -7,6 +7,10 @@ namespace System
 {
     public static partial class RandomHelper
     {
-        // TODO
+        public static string NextString(params string[] strs)
+        {
+            // TODO
+            return Rand.NextString(strs);
+        }
     }
 }

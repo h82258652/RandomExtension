@@ -1,4 +1,6 @@
-﻿using System.Numerics;
+﻿#if !Portable
+using System.Numerics;
+#endif
 
 namespace System
 {
