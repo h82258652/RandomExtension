@@ -5,21 +5,25 @@ namespace System
     {
         public static long NextInt64()
         {
+            // TODO
             return Rand.NextInt64();
         }
 
-        public static long NextInt64(bool containNavigate)
+        public static long NextInt64(bool containNegative)
         {
-            return Rand.NextInt64(containNavigate);
+            // TODO
+            return Rand.NextInt64(containNegative);
         }
 
         public static long NextInt64(long maxValue)
         {
+            // TODO
             return Rand.NextInt64(maxValue);
         }
 
         public static long NextInt64(long minValue, long maxValue)
         {
+            // TODO
             return Rand.NextInt64(minValue, maxValue);
         }
     }

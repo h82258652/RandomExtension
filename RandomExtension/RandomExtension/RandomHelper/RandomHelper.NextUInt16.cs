@@ -5,15 +5,18 @@ namespace System
     {
         public static ushort NextUInt16()
         {
+            // TODO
             return Rand.NextUInt16();
         }
 
         public static ushort NextUInt16(ushort maxValue)
         {
+            // TODO
             return Rand.NextUInt16(maxValue);
         }
         public static ushort NextUInt16(ushort minValue, ushort maxValue)
         {
+            // TODO
             return Rand.NextUInt16(minValue, maxValue);
         }
     }
