@@ -6,13 +6,13 @@ namespace System
         public float NextSingle()
         {
             // TODO
-            return 0;
+            return (float)NextDouble(float.MaxValue);
         }
 
         public float NextSingle(bool containNagivate)
         {
             // TODO
-            return 0;
+            return (float)NextDouble(float.MinValue, float.MaxValue);
         }
 
         public float NextSingle(float maxValue)
@@ -22,7 +22,7 @@ namespace System
             {
                 throw new ArgumentOutOfRangeException("maxValue", "maxValue 必须大于或等于零。");
             }
-            return 0;
+            return (float)NextDouble(maxValue);
         }
 
         public float NextSingle(float minValue, float maxValue)
@@ -32,7 +32,7 @@ namespace System
             {
                 throw new ArgumentOutOfRangeException("minValue", "“minValue”不能大于 maxValue。");
             }
-            return 0;
+            return (float)NextDouble(minValue, maxValue);
         }
     }
 }
