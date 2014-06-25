@@ -38,6 +38,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,6 +48,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RandomExtension\RandomExtension.cs" />
+    <Compile Include="RandomExtension\RandomExtension.NextBigInteger.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextBoolean.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextByte.cs" />
     <Compile Include="RandomExtension\RandomExtension.NextBytes.cs" />
