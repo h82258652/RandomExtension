@@ -11,27 +11,27 @@
     <AssemblyName>RandomExtension</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkProfile />
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\net35\</OutputPath>
-    <DefineConstants>TRACE;DEBUG;Net35</DefineConstants>
+    <OutputPath>bin\Debug\net35client\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;Net35Client</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Debug\net35\RandomExtension.XML</DocumentationFile>
+    <DocumentationFile>bin\Debug\net35client\RandomExtension.XML</DocumentationFile>
     <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\net35\</OutputPath>
-    <DefineConstants>TRACE;Net35</DefineConstants>
+    <OutputPath>bin\Release\net35client\</OutputPath>
+    <DefineConstants>TRACE;Net35Client</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <DocumentationFile>bin\Release\net35\RandomExtension.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\net35client\RandomExtension.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <SignAssembly>true</SignAssembly>

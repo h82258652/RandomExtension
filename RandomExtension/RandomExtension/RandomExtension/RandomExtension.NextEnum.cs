@@ -9,10 +9,8 @@ namespace System
         /// <typeparam name="T">可枚举类型。</typeparam>
         /// <returns>其中一个枚举值。</returns>
         /// <exception cref="System.InvalidOperationException"><c>T</c> 不是枚举类型。</exception>
-        public T NextEnum<T>() where T : struct,  IComparable, IFormattable
-#if !Portable
-            , IConvertible
-#endif
+        [CLSCompliant(false)]
+        public T NextEnum<T>() where T : struct,  IComparable, IFormattable, IConvertible
         {
             var type = typeof(T);
             if (type.IsEnum == false)

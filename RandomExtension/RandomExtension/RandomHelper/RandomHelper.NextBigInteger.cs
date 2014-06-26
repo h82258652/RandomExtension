@@ -1,4 +1,4 @@
-﻿#if !Portable
+﻿#if !Portable&&!Net35&&!Net35Client
 using System.Numerics;
 #endif
 
@@ -6,7 +6,7 @@ namespace System
 {
     public static partial class RandomHelper
     {
-#if !Portable
+#if !Portable&&!Net35&&!Net35Client
         /// <summary>
         /// 返回一个小于所指定最大值的非负随机数。
         /// </summary>
