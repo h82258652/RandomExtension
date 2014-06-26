@@ -1,21 +1,24 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿
 namespace System
 {
     public static partial class RandomHelper
     {
+        /// <summary>
+        /// 返回非负随机数。
+        /// </summary>
+        /// <returns>返回一个非负随机的 Decimal。</returns>
         public static decimal NextDecimal()
         {
-            // TODO
             return Rand.NextDecimal();
         }
 
+        /// <summary>
+        /// 返回随机数。
+        /// </summary>
+        /// <param name="containNegative">是否包含负数。</param>
+        /// <returns>返回一个随机的 Decimal。</returns>
         public static decimal NextDecimal(bool containNegative)
         {
-            // TODO
             return Rand.NextDecimal(containNegative);
         }
 

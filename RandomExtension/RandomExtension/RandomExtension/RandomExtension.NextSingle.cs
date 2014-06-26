@@ -15,11 +15,18 @@ namespace System
         /// <summary>
         /// 返回随机数。
         /// </summary>
-        /// <param name="containNagivate">是否包含负数。</param>
+        /// <param name="containNegative">是否包含负数。</param>
         /// <returns>返回一个随机的单精度浮点数。</returns>
-        public float NextSingle(bool containNagivate)
+        public float NextSingle(bool containNegative)
         {
-            return (float)NextDouble(float.MinValue, float.MaxValue);
+            if (containNegative)
+            {
+                return NextSingle(float.MinValue, float.MaxValue);
+            }
+            else
+            {
+                return NextSingle();
+            }
         }
 
         /// <summary>
