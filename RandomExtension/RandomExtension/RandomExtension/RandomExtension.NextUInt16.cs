@@ -1,4 +1,5 @@
-﻿namespace System
+﻿
+namespace System
 {
     public partial class RandomExtension
     {
