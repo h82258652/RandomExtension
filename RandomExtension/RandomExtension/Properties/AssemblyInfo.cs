@@ -14,7 +14,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
+#if !Portable
 [assembly: ComVisible(false)]
+#endif
 
 // 程序集的版本信息由下面四个值组成: 
 //

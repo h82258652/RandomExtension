@@ -7,6 +7,7 @@ namespace System
         /// 返回非负随机数。
         /// </summary>
         /// <returns>返回一个非负随机的 SByte。</returns>
+        [CLSCompliant(false)]
         public sbyte NextSByte()
         {
             return (sbyte)Next(sbyte.MaxValue);
@@ -17,6 +18,7 @@ namespace System
         /// </summary>
         /// <param name="containNegative">是否包含负数。</param>
         /// <returns>返回一个随机的 SByte。</returns>
+        [CLSCompliant(false)]
         public sbyte NextSByte(bool containNegative)
         {
             if (containNegative)
@@ -35,6 +37,7 @@ namespace System
         /// <param name="maxValue">要生成的随机数的上限（随机数不能取该上限值）。maxValue 必须大于或等于零。</param>
         /// <returns>大于等于零且小于 maxValue 的 SByte，即：返回值的范围通常包括零但不包括 maxValue。不过，如果 maxValue 等于零，则返回 maxValue。</returns>
         /// <exception cref="System.ArgumentOutOfRangeException"><c>maxValue</c> 小于 0。</exception>
+        [CLSCompliant(false)]
         public sbyte NextSByte(sbyte maxValue)
         {
             if (maxValue < 0)
@@ -51,6 +54,7 @@ namespace System
         /// <param name="maxValue">返回的随机数的上界（随机数不能取该上界值）。maxValue 必须大于或等于 minValue。</param>
         /// <returns>一个大于等于 minValue 且小于 maxValue 的 SByte，即：返回的值范围包括 minValue 但不包括 maxValue。如果 minValue 等于 maxValue，则返回 minValue。</returns>
         /// <exception cref="System.ArgumentOutOfRangeException"><c>minValue</c> 大于 <c>maxValue</c>。</exception>
+        [CLSCompliant(false)]
         public sbyte NextSByte(sbyte minValue, sbyte maxValue)
         {
             if (minValue > maxValue)
